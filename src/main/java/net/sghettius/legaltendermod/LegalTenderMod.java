@@ -2,8 +2,12 @@ package net.sghettius.legaltendermod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.sghettius.legaltendermod.block.ModBlocks;
+import net.sghettius.legaltendermod.item.ModItemGroup;
+import net.sghettius.legaltendermod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 //test comment
 public class LegalTenderMod implements ModInitializer {
 	public static final  String MOD_ID = "legaltendermod";
@@ -11,10 +15,8 @@ public class LegalTenderMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroup.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
