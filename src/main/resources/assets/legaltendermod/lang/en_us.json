@@ -5,6 +5,10 @@
   "item.legaltendermod.anhydrous_nickel": "Anhydrous Nickel",
   "item.legaltendermod.nickel_pellet": "Nickel Pellet",
   "item.legaltendermod.nickel_ingot": "Nickel Ingot",
+  "item.legaltendermod.raw_garnierite": "Raw Garnierite",
+
+  "block.legaltendermod.garnierite_ore": "Garnierite Ore",
+
   "itemgroup.legaltender": "Legal Tender"
 
 
